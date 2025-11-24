@@ -227,6 +227,7 @@ func _client_eventsub_handle_message(type, message):
 				var new_fragment : Dictionary = {}
 				if frag["type"] == "emote":
 					new_fragment["twitch_emote_id"] = frag["emote"]["id"]
+					new_fragment["emote_format"] = frag["emote"]["format"]
 				if frag["type"] == "cheermote":
 					total_bits += int(frag["cheermote"]["bits"])
 				new_fragment["text"] = frag["text"]
