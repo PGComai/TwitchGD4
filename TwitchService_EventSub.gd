@@ -237,6 +237,8 @@ func _client_eventsub_handle_message(type, message):
 				message["chatter_user_login"],
 				message["chatter_user_name"],
 				message["message"]["text"],
+				message["color"],
+				message["badges"],
 				output_fragment_list,
 				total_bits)
 
